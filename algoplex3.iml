@@ -10,5 +10,8 @@
     <orderEntry type="library" name="jogl-all" level="project" />
     <orderEntry type="library" name="spacefillerlib" level="project" />
     <orderEntry type="library" name="jai_core" level="project" />
+    <orderEntry type="library" name="geomerative" level="project" />
+    <orderEntry type="library" name="jl1.0.1" level="project" />
+    <orderEntry type="library" name="Ani" level="project" />
   </component>
 </module>
