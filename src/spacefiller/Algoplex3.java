@@ -6,13 +6,23 @@ import ddf.minim.analysis.BeatDetect;
 import de.looksgood.ani.Ani;
 import geomerative.RG;
 import processing.core.PApplet;
+import processing.core.PVector;
+import processing.event.KeyEvent;
+import processing.event.MouseEvent;
 import processing.opengl.PJOGL;
 import spacefiller.mapping.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Algoplex3 extends PApplet {
+  private static final int ACTIVATION_MIN = 1;
+  private static final int ACTIVATION_MAX = 1;
+
   public static void main(String[] args) {
     main("spacefiller.Algoplex3");
   }
@@ -23,7 +33,6 @@ public class Algoplex3 extends PApplet {
   private Minim minim;
   private AudioInput in;
   private BeatDetect beat;
-
 
   @Override
   public void settings() {
@@ -61,16 +70,20 @@ public class Algoplex3 extends PApplet {
     for (Component component : components) {
       if (component.initialized()) {
         component.getCanvas().beginDraw();
+
         component.draw();
 
-        component.getGraphTransformer().drawImage(getGraphics(), component.getCanvas());
-
         if (calibrate) {
-          component.getGraphTransformer().drawUI(getGraphics());
+          component.drawCalibration();
         }
 
+        component.getGraphTransformer().drawImage(getGraphics(), component.getCanvas());
         component.getCanvas().endDraw();
       }
+    }
+
+    if (calibrate) {
+      mapper.draw(getGraphics());
     }
 
     stroke(255);
@@ -78,38 +91,16 @@ public class Algoplex3 extends PApplet {
     beat.detect(in.mix);
     fill(0);
     if (beat.isOnset()) {
-      for (Component component : components) {
-        component.trigger();
+      components.toArray();
+
+      List<Component> s = components.stream().filter(component -> !component.isActive()).collect(Collectors.toList());
+      Collections.shuffle(s);
+      int numToActivate = (int) Math.round(Math.random() * (ACTIVATION_MAX - ACTIVATION_MIN) + ACTIVATION_MIN);
+      for (int i = 0; i < numToActivate && i < s.size(); i++) {
+        s.get(i).trigger();
       }
     }
   }
-
-//  @Override
-//  public void mousePressed() {
-//    for (Component component : components) {
-//      if (component.initialized()) {
-//        component.getGraphTransformer().mouseDown(mouseX, mouseY);
-//      }
-//    }
-//  }
-//
-//  @Override
-//  public void mouseDragged() {
-//    for (Component component : components) {
-//      if (component.initialized()) {
-//        component.getGraphTransformer().mouseDragged(mouseX, mouseY);
-//      }
-//    }
-//  }
-//
-//  @Override
-//  public void mouseReleased() {
-//    for (Component component : components) {
-//      if (component.initialized()) {
-//        component.getGraphTransformer().mouseUp(mouseX, mouseY);
-//      }
-//    }
-//  }
 
   @Override
   public void keyPressed() {
