@@ -1,0 +1,6 @@
+TODO
+
+- save geometry
+- adjust particle simulation for smaller size
+- combine first and last point into a single node?
+- figure out X rotation

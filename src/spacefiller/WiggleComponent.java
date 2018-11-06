@@ -1,80 +1,102 @@
 package spacefiller;
 
+import de.looksgood.ani.Ani;
 import geomerative.RG;
 import geomerative.RPoint;
 import geomerative.RShape;
 import processing.core.PApplet;
 import processing.core.PGraphics;
+import processing.core.PVector;
 import spacefiller.mapping.RShapeTransformer;
+import spacefiller.particles.Bounds;
+import spacefiller.particles.Particle;
+import spacefiller.particles.ParticleSystem;
+import spacefiller.particles.behaviors.FlockParticles;
+import spacefiller.particles.behaviors.ParticleFriction;
+import spacefiller.particles.behaviors.ReflectiveBounds;
 
 import static processing.core.PConstants.ROUND;
 
-public class WiggleComponent extends Component {
-  private static final float AMPLITUDE = 100;
-  private RShape shape;
-  private RShape outer;
-  private RShape inner;
-
-  private int color;
-  private float noiseX;
-  private float noiseY;
-
-  public WiggleComponent(PApplet parent) {
-    super(parent);
-
-    shape = RG.loadShape("vector/wiggle.svg");
-    outer = shape.getChild("outer");
-    inner = shape.getChild("inner");
-
-    initCanvas(shape.getWidth(), shape.getHeight(), 10);
-
-    addChild(new RShapeTransformer(outer));
-  }
-
+public class WiggleComponent extends Behavior {
   @Override
   public void draw() {
-    noiseX += energy / 30f;
-    noiseY += energy / 30f;
 
-    canvas.clear();
-    color = parent.lerpColor( 0, 0xFFFFFFFF, energy);
-
-    outer.setFill(color);
-    outer.setStrokeWeight(0);
-    outer.draw(canvas);
-
-    canvas.beginShape();
-    canvas.stroke(0);
-    canvas.strokeWeight(10);
-    canvas.strokeCap(ROUND);
-    canvas.noFill();
-
-    for (int i = 0; i < 10; i++) {
-      RPoint p= inner.getPoint(i/10f);
-      canvas.curveVertex(p.x + (parent.noise(p.x / 200f, noiseX) * AMPLITUDE - AMPLITUDE/2f), p.y + (parent.noise(p.y / 200f, noiseY) * AMPLITUDE - AMPLITUDE/2f));
-    }
-
-    canvas.endShape();
-
-
-//    canvas.strokeWeight(4);
-//    canvas.stroke(255);
-//    canvas.noFill();
+  }
+//  private RShape shape;
+//  private RShape outer;
+//  private float maxSpeed;
+//  private float particleSize;
+//  private ParticleSystem system;
+//  private FlockParticles flock;
 //
-//    canvas.beginShape();
-//    for (float t = 0; t < energy; t += 0.01) {
-//      RPoint point = shape.getPoint(t);
-//      canvas.vertex(point.x, point.y);
+//  public WiggleComponent(PApplet parent) {
+//    super(parent);
+//
+//    shape = RG.loadShape("vector/wiggle.svg");
+//    outer = shape.getChild("outer");
+//
+//    initCanvas(shape.getWidth(), shape.getHeight(), 10);
+//
+//    addChild(new RShapeTransformer(outer));
+//
+//    system = new ParticleSystem(new Bounds(canvas.width, canvas.height), 500, 30, 1);
+//
+//    while (system.getParticles().size() < 300) {
+//      Vector pos = new Vector((float) Math.random() * canvas.width, (float) Math.random() * canvas.height);
+//      if (outer.contains(new RPoint(pos.x, pos.y))); {
+//        system.createParticle(pos, 2);
+//      }
 //    }
-//    canvas.endShape();
-  }
-
-  @Override
-  public void drawCalibration() {
-    outer.setFill(0);
-    outer.setStroke(0xffffffff);
-    outer.setStrokeWeight(5);
-    outer.draw(canvas);
-  }
+//
+//    system.addBehavior(new ReflectiveBounds());
+//
+//    flock = new FlockParticles(3, 1, 1, 20, 30, 30, 0.1f, 4);
+//    system.addBehavior(flock);
+//    //system.addBehavior(new ParticleFriction(0.f));
+//    system.addBehavior(new ShapeBounds(outer));
+//
+//    RG.setPolygonizerLength(30);
+//    outer.polygonize();
+//  }
+//
+//  @Override
+//  public void draw() {
+//    outer.setStroke(parent.color(energy * 255));
+//    outer.setFill(0);
+//    outer.setStrokeWeight(5);
+//    outer.draw(canvas);
+//
+//    try {
+//      system.update();
+//    } catch (InterruptedException e) {
+//      e.printStackTrace();
+//    }
+//
+//    canvas.stroke(255);
+//    canvas.strokeWeight(particleSize);
+//    for (Particle p : system.getParticles()) {
+//      canvas.point(p.position.x, p.position.y);
+//    }
+//
+//    flock.setMaxSpeed(maxSpeed);
+//  }
+//
+//  @Override
+//  public void drawCalibration() {
+//    outer.setFill(0);
+//    outer.setStroke(0xffffffff);
+//    outer.setStrokeWeight(5);
+//    outer.draw(canvas);
+//  }
+//
+//  @Override
+//  public void trigger() {
+//    maxSpeed = 10;
+//    particleSize = 20;
+//
+//    Ani.to(this, 4f, "maxSpeed", 1f);
+//    Ani.to(this, 2f, "particleSize", 0f);
+//    super.trigger();
+//  }
 }
 

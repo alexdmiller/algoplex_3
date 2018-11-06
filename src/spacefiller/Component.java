@@ -1,12 +1,16 @@
 package spacefiller;
 
 import de.looksgood.ani.Ani;
+import geomerative.RG;
+import geomerative.RPoint;
+import geomerative.RShape;
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PVector;
 import spacefiller.graph.GridUtils;
 import spacefiller.graph.renderer.BasicGraphRenderer;
 import spacefiller.mapping.GraphTransformer;
+import spacefiller.mapping.RShapeTransformer;
 import spacefiller.mapping.Transformable;
 
 import java.util.ArrayList;
@@ -16,15 +20,27 @@ public class Component {
   private GraphTransformer graphTransformer;
   private BasicGraphRenderer graphRenderer;
   private PVector position;
+  private RShape shape;
+  private RShape mask;
+  private List<Behavior> behaviors;
 
   protected PGraphics canvas;
   protected PApplet parent;
 
-  protected float energy;
-
-  public Component(PApplet parent) {
+  public Component(RShape shape, PApplet parent) {
+    this.shape = shape;
     this.parent = parent;
     this.position = new PVector();
+    this.behaviors = new ArrayList<>();
+
+    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+
+    mask = RShape.createRectangle(0, 0, canvas.width, canvas.height).diff(shape);
+    mask.setFill(0xff000000);
+    mask.setStroke(0xff000000);
+    mask.setStrokeWeight(1);
+
+    getGraphTransformer().addChild(new RShapeTransformer(shape));
   }
 
   public PVector getPosition() {
@@ -46,30 +62,47 @@ public class Component {
   }
 
   public void initCanvas(float width, float height, int divisions) {
+    canvas = parent.createGraphics(
+        (int) width, (int) height,
+        parent.P2D);
+
     graphTransformer = new GraphTransformer(GridUtils.createSimpleGrid(
-        divisions, divisions, width / divisions, height / divisions));
+        divisions, divisions, width / divisions, height / divisions), canvas);
     graphTransformer.translate(position.x, position.y);
     graphRenderer = new BasicGraphRenderer(2);
     graphRenderer.setColor(parent.color(255));
-    canvas = parent.createGraphics(
-        (int) graphTransformer.getPreTransformGrid().getWidth(),
-        (int) graphTransformer.getPreTransformGrid().getHeight(),
-        parent.P2D);
+  }
+
+  public List<Behavior> getBehaviors() {
+    return behaviors;
+  }
+
+  public Component add(Behavior behavior) {
+    behavior.setCanvas(canvas);
+    behavior.setParent(parent);
+    behavior.setShape(shape);
+
+    behaviors.add(behavior);
+    return this;
   }
 
   public void draw() {
+    canvas.clear();
+    for (Behavior behavior : behaviors) {
+      behavior.draw();
+    }
+
+    mask.draw(canvas);
   }
 
   public void drawCalibration() {
-
+    shape.setFill(0);
+    shape.setStroke(0xffffffff);
+    shape.draw(canvas);
   }
 
   public GraphTransformer getGraphTransformer() {
     return graphTransformer;
-  }
-
-  protected void addChild(Transformable transformable) {
-    getGraphTransformer().addChild(transformable);
   }
 
   public PGraphics getCanvas() {
@@ -80,12 +113,20 @@ public class Component {
     return canvas != null;
   }
 
-  public void trigger() {
-    energy = 1;
-    Ani.to(this, 3f, "energy", 0f);
+  public boolean isActive() {
+    for (Behavior b : behaviors) {
+      if (b.isActive()) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
-  public boolean isActive() {
-    return energy > 0;
+  public void triggerRandom() {
+    if (!behaviors.isEmpty()) {
+      int index = (int) Math.floor(Math.random() * behaviors.size());
+      behaviors.get(index).trigger();
+    }
   }
 }

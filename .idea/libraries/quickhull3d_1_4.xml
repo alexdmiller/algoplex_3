@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="quickhull3d.1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/Processing3/libraries/mesh/library/quickhull3d.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Processing3/libraries/mesh/library/mesh.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
