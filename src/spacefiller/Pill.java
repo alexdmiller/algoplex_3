@@ -20,7 +20,7 @@ public class Pill extends Behavior {
 //  public Pill(PApplet parent) {
 //    super(parent);
 //    shape = RG.loadShape("vector/pills.svg");
-//    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+//    loadOrCreateTransformer((int) shape.getWidth(), (int) shape.getHeight(), 10);
 //
 //    inner = shape.getChild("inner");
 //    outer = shape.getChild("outer");

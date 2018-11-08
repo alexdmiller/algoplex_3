@@ -20,7 +20,7 @@ public class XComponent extends Behavior {
 //  public XComponent(PApplet parent) {
 //    super(parent);
 //    shape = RG.loadShape("vector/x.svg");
-//    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+//    loadOrCreateTransformer((int) shape.getWidth(), (int) shape.getHeight(), 10);
 //
 //    x = shape.getChild("x");
 //    border = shape.getChild("border");

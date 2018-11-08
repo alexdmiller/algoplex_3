@@ -1,6 +1,9 @@
 TODO
 
-- save geometry
+- add padding around shapes
 - adjust particle simulation for smaller size
 - combine first and last point into a single node?
-- figure out X rotation
+- figure out concentric weirdness (not resetting?)
+- perlin flow lines
+- marching squares
+- contours (in circle?)

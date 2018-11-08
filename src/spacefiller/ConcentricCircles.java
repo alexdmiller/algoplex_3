@@ -17,7 +17,7 @@ public class ConcentricCircles extends Behavior {
 //  public ConcentricCircles(PApplet parent, RShape shape) {
 //    super(parent);
 //    this.shape = shape;
-//    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+//    loadOrCreateTransformer((int) shape.getWidth(), (int) shape.getHeight(), 10);
 //
 //    for (RShape child : shape.children) {
 //      addChild(new RShapeTransformer(child));

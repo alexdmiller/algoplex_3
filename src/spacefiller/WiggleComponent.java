@@ -35,7 +35,7 @@ public class WiggleComponent extends Behavior {
 //    shape = RG.loadShape("vector/wiggle.svg");
 //    outer = shape.getChild("outer");
 //
-//    initCanvas(shape.getWidth(), shape.getHeight(), 10);
+//    loadOrCreateTransformer(shape.getWidth(), shape.getHeight(), 10);
 //
 //    addChild(new RShapeTransformer(outer));
 //

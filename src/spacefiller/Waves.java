@@ -21,7 +21,7 @@ public class Waves extends Behavior {
 //    RShape shape = RG.loadShape("vector/waves.svg");
 //    top = shape.getChild("top");
 //    bottom = shape.getChild("bottom");
-//    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+//    loadOrCreateTransformer((int) shape.getWidth(), (int) shape.getHeight(), 10);
 //
 //    for (RShape child : shape.children) {
 //      addChild(new RShapeTransformer(child));

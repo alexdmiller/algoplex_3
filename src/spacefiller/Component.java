@@ -1,44 +1,59 @@
 package spacefiller;
 
-import de.looksgood.ani.Ani;
 import geomerative.RG;
-import geomerative.RPoint;
 import geomerative.RShape;
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PVector;
 import spacefiller.graph.GridUtils;
-import spacefiller.graph.renderer.BasicGraphRenderer;
 import spacefiller.mapping.GraphTransformer;
 import spacefiller.mapping.RShapeTransformer;
-import spacefiller.mapping.Transformable;
 
+import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Component {
+  private static final int PADDING = 20;
+
+  private static Set<String> componentIDs = new HashSet<>();
+
+  private String componentID;
   private GraphTransformer graphTransformer;
-  private BasicGraphRenderer graphRenderer;
   private PVector position;
   private RShape shape;
-  private RShape mask;
   private List<Behavior> behaviors;
+  private RShape mask;
 
   protected PGraphics canvas;
   protected PApplet parent;
 
-  public Component(RShape shape, PApplet parent) {
-    this.shape = shape;
+  public Component(String componentID, PApplet parent) {
+    this.shape = RG.loadShape("vector/" + componentID + ".svg");
+
+    // TODO: check for duplicate names here
+    int i = 0;
+    while (componentIDs.contains(componentID + "-" + i)) {
+      i++;
+    }
+
+    this.componentID = componentID + "-" + i;
+    componentIDs.add(this.componentID);
+
     this.parent = parent;
     this.position = new PVector();
     this.behaviors = new ArrayList<>();
+    this.canvas = parent.createGraphics((int) shape.getWidth() + PADDING * 2, (int) shape.getHeight() + PADDING * 2, parent.P2D);
 
-    initCanvas((int) shape.getWidth(), (int) shape.getHeight(), 10);
+    shape.translate(PADDING, PADDING);
+
+    loadOrCreateTransformer(10);
 
     mask = RShape.createRectangle(0, 0, canvas.width, canvas.height).diff(shape);
     mask.setFill(0xff000000);
-    mask.setStroke(0xff000000);
-    mask.setStrokeWeight(1);
+    mask.setStrokeWeight(0);
 
     getGraphTransformer().addChild(new RShapeTransformer(shape));
   }
@@ -57,20 +72,46 @@ public class Component {
     // todo: update canvas if it's already there
   }
 
-  public void setPosition(float x, float y) {
+  public Component setPosition(float x, float y) {
     setPosition(new PVector(x, y));
+    return this;
   }
 
-  public void initCanvas(float width, float height, int divisions) {
-    canvas = parent.createGraphics(
-        (int) width, (int) height,
-        parent.P2D);
+  public void save() {
+    try {
+      FileOutputStream fileOut =
+          new FileOutputStream("serialized/" + componentID + ".ser");
+      ObjectOutputStream out = new ObjectOutputStream(fileOut);
+      out.writeObject(graphTransformer);
+      out.close();
+      fileOut.close();
+    } catch (IOException i) {
+      i.printStackTrace();
+    }
+  }
 
-    graphTransformer = new GraphTransformer(GridUtils.createSimpleGrid(
-        divisions, divisions, width / divisions, height / divisions), canvas);
+  private void loadOrCreateTransformer(int divisions) {
+    try {
+      FileInputStream fileIn = new FileInputStream("serialized/" + componentID + ".ser");
+      ObjectInputStream in = new ObjectInputStream(fileIn);
+      graphTransformer = (GraphTransformer) in.readObject();
+      in.close();
+      fileIn.close();
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException i) {
+      i.printStackTrace();
+    } catch (ClassNotFoundException c) {
+      c.printStackTrace();
+    }
+
+    if (graphTransformer == null) {
+      graphTransformer = new GraphTransformer(GridUtils.createSimpleGrid(
+          divisions, divisions, canvas.width / divisions, canvas.height / divisions));
+    }
+
+    graphTransformer.setCanvas(canvas);
     graphTransformer.translate(position.x, position.y);
-    graphRenderer = new BasicGraphRenderer(2);
-    graphRenderer.setColor(parent.color(255));
   }
 
   public List<Behavior> getBehaviors() {
