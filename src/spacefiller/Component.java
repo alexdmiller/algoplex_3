@@ -124,6 +124,7 @@ public class Component {
     behavior.setShape(shape);
 
     behaviors.add(behavior);
+    behavior.setup();
     return this;
   }
 

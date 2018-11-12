@@ -12,6 +12,11 @@ public class Waves extends Behavior {
 
   }
 
+  @Override
+  public void setup() {
+
+  }
+
 //  private RShape top;
 //  private RShape bottom;
 //

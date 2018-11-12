@@ -22,6 +22,7 @@ public class Algoplex3 extends PApplet {
   public static final SmoothColorTheme THEME_1 = new SmoothColorTheme(
           new ColorList(new int[] {
               0xffff0000,
+              0xffff0000,
               0xffff00ff,
               0xff0000ff
           }), 200);
@@ -101,22 +102,29 @@ public class Algoplex3 extends PApplet {
             .add(new Gradient()));
 
 //    components.add(
-//        new Component("slanted-wave", this));
+//        new Component("slanted-wave", this)
+//          .add(new Marching()));
 //
-//    components.add(
-//        new Component("squiggle", this));
+    components.add(
+        new Component("squiggle", this)
+          .add(new Particles()));
+
+    components.add(
+        new Component("wiggle", this)
+            .add(new Particles()));
+
 //
 //    components.add(
 //        new Component("swoosh", this)
 //            .add(new ConcentricBehavior()));
 //
-//    components.add(
-//        new Component("u-left", this)
-//            .add(new ConcentricBehavior()));
+    components.add(
+        new Component("u-left", this)
+            .add(new Tangents()));
 //
-//    components.add(
-//        new Component("u-right", this)
-//            .add(new ConcentricBehavior()));
+    components.add(
+        new Component("u-right", this)
+            .add(new Marching()));
 //
 //
 //    components.add(
@@ -124,9 +132,6 @@ public class Algoplex3 extends PApplet {
 //            .add(new FlashBehavior())
 //            .add(new ConcentricBehavior()));
 //
-//    components.add(
-//        new Component("wiggle", this)
-//            .add(new ConcentricBehavior()));
 //
 //    components.add(
 //        new Component("x", this)

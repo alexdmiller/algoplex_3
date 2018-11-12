@@ -9,10 +9,15 @@ public class ColorScroll extends Behavior {
   @Override
   public void draw() {
     for (float y = 0; y < canvas.height; y += spacing) {
-      canvas.stroke(THEME_1.getColor(y / 50f + energy).toARGB());
+      canvas.stroke(THEME_1.getColor(y / 100f + energy).toARGB());
       canvas.strokeWeight((float) (Math.sin(y / 50f + energy * speed) + 1) / 2f * 20 * energy);
       canvas.line(0, y, canvas.width, y);
     }
+  }
+
+  @Override
+  public void setup() {
+
   }
 
   @Override

@@ -36,11 +36,16 @@ public class Gradient extends Behavior {
   }
 
   @Override
+  public void setup() {
+
+  }
+
+  @Override
   public void trigger() {
     super.trigger();
 
     spread = (float) (Math.random() * Math.PI);
     start =  (float) (Math.random() * Math.PI * 2 - Math.PI);
-    speed =  (float) (Math.random() * Math.PI - Math.PI/2f);
+    speed =  (float) (Math.random() * Math.PI * 2 - Math.PI);
   }
 }

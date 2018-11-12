@@ -10,4 +10,9 @@ public class FlashBehavior extends Behavior {
     canvas.fill(energy * 255);
     canvas.rect(0, 0, canvas.width, canvas.height);
   }
+
+  @Override
+  public void setup() {
+
+  }
 }

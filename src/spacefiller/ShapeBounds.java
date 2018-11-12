@@ -1,5 +1,6 @@
 package spacefiller;
 
+import geomerative.RG;
 import geomerative.RPoint;
 import geomerative.RShape;
 import processing.core.PVector;
@@ -12,6 +13,8 @@ public class ShapeBounds extends ParticleBehavior {
   private RShape shape;
 
   public ShapeBounds(RShape shape) {
+    RG.setPolygonizerLength(20);
+    shape.polygonize();
     this.shape = shape;
   }
 
@@ -34,7 +37,7 @@ public class ShapeBounds extends ParticleBehavior {
       closest.sub(p);
       closest.scale(0.01f);
       particle.applyForce(new Vector(closest.x, closest.y));
-    } else if (closestDistance < 30) {
+    } else if (closestDistance < 10) {
       closest.sub(p);
       closest.scale(0.1f);
       particle.applyForce(new Vector(-closest.x, -closest.y));

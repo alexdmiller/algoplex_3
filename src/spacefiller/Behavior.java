@@ -37,7 +37,8 @@ public abstract class Behavior {
     this.canvas = canvas;
   }
 
-  abstract public void draw();
+  public abstract void draw();
+  public abstract void setup();
 
   public void trigger() {
     energy = 1;
@@ -49,4 +50,6 @@ public abstract class Behavior {
   public boolean isActive() {
     return energy > 0;
   }
+
+
 }

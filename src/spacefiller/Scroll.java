@@ -14,6 +14,11 @@ public class Scroll extends Behavior {
   }
 
   @Override
+  public void setup() {
+
+  }
+
+  @Override
   public void trigger() {
     super.trigger();
 

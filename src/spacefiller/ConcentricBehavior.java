@@ -20,4 +20,9 @@ public class ConcentricBehavior extends Behavior {
       }
     }
   }
+
+  @Override
+  public void setup() {
+
+  }
 }

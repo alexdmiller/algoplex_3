@@ -13,6 +13,11 @@ public class ConcentricCircles extends Behavior {
 
   }
 
+  @Override
+  public void setup() {
+
+  }
+
 
 //  public ConcentricCircles(PApplet parent, RShape shape) {
 //    super(parent);
