@@ -18,6 +18,8 @@ public class Gradient extends Behavior {
     TColor color3 = new TColor(THEME_1.getColor(energy * speed + spread + start));
     TColor color4 = new TColor(THEME_1.getColor(energy * speed + spread*3/2f + start));
 
+//    System.out.println(linearEnergy);
+
     color1.setAlpha(linearEnergy);
     color2.setAlpha(linearEnergy);
     color3.setAlpha(linearEnergy);
@@ -37,7 +39,9 @@ public class Gradient extends Behavior {
 
   @Override
   public void setup() {
-
+    spread = (float) (Math.random() * Math.PI);
+    start =  (float) (Math.random() * Math.PI * 2 - Math.PI);
+    speed =  (float) (Math.random() * Math.PI * 2 - Math.PI);
   }
 
   @Override
@@ -46,6 +50,6 @@ public class Gradient extends Behavior {
 
     spread = (float) (Math.random() * Math.PI);
     start =  (float) (Math.random() * Math.PI * 2 - Math.PI);
-    speed =  (float) (Math.random() * Math.PI * 2 - Math.PI);
+    speed = (float) ((Math.round(Math.random()) * 2 - 1) * Math.PI);
   }
 }

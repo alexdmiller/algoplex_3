@@ -32,7 +32,7 @@ public class Algoplex3 extends PApplet {
   }
 
   private List<Component> components;
-  private boolean calibrate = true;
+  private boolean calibrate = false;
   private Mapper mapper;
   private Minim minim;
   private AudioInput in;
@@ -49,6 +49,7 @@ public class Algoplex3 extends PApplet {
   public void setup() {
     RG.init(this);
     Ani.init(this);
+    // RG.ignoreStyles();
 
     components = new ArrayList<>();
 
@@ -64,23 +65,23 @@ public class Algoplex3 extends PApplet {
 //    components.add(new ConcentricCircles(this, RG.loadShape("vector/concentric-squares.svg")));
 //    components.add(new Waves(this));
 
-    components.add(
-        new Component("circle", this)
-            .add(new ColorScroll()));
-
+//    components.add(
+//        new Component("circle", this)
+//            .add(new ColorScroll()));
+//
 //    components.add(
 //        new Component("topographic", this)
-//            .add(new Scroll()));
+//            .add(new LayerScroll()));
+//
+//    components.add(
+//        new Component("concentric-circles", this)
+//            .add(new ColorLayerScroll()));
+//            .add(new LayerScroll()));
 
-//    components.add(
-//        new Component("concentric-circles", this)
-//            .add(new FlashBehavior())
-//            .add(new ConcentricBehavior()));
-//
-//    components.add(
-//        new Component("concentric-squares", this)
-//            .add(new FlashBehavior())
-//            .add(new ConcentricBehavior()));
+    components.add(
+        new Component("concentric-squares", this)
+            .add(new FlashBehavior())
+            .add(new ConcentricBehavior()));
 //
 //    components.add(
 //        new Component("concentric-circles", this)
@@ -89,42 +90,41 @@ public class Algoplex3 extends PApplet {
 //
 //    components.add(
 //        new Component("concentric-squares", this)
-//            .add(new FlashBehavior())
-//            .add(new ConcentricBehavior()));
+//            .add(new LayerScroll()));
 //
 //    components.add(
 //        new Component("grid", this)
 //            .add(new FlashBehavior())
 //            .add(new ConcentricBehavior()));
 
-    components.add(
-        new Component("pills", this)
-            .add(new Gradient()));
+//    components.add(
+//        new Component("pills", this)
+//            .add(new Gradient()));
 
 //    components.add(
 //        new Component("slanted-wave", this)
 //          .add(new Marching()));
 //
-    components.add(
-        new Component("squiggle", this)
-          .add(new Particles()));
-
-    components.add(
-        new Component("wiggle", this)
-            .add(new Particles()));
-
+//    components.add(
+//        new Component("squiggle", this)
+//          .add(new Threads()));
+//
+//    components.add(
+//        new Component("wiggle", this)
+//            .add(new Particles()));
+//
 //
 //    components.add(
 //        new Component("swoosh", this)
 //            .add(new ConcentricBehavior()));
 //
-    components.add(
-        new Component("u-left", this)
-            .add(new Tangents()));
+//    components.add(
+//        new Component("u-left", this)
+//            .add(new Tangents()));
 //
-    components.add(
-        new Component("u-right", this)
-            .add(new Marching()));
+//    components.add(
+//        new Component("u-right", this)
+//            .add(new Marching()));
 //
 //
 //    components.add(

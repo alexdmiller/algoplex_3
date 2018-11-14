@@ -29,8 +29,8 @@ public class Marching extends Behavior {
 
   @Override
   public void trigger() {
-    marchingSquares.setCellSize(10f);
-    noiseScale = 0.2f;
+    marchingSquares.setCellSize((float) (Math.random() * 10 + 10));
+    noiseScale = 0.1f;
     Ani.to(this, 2f, "noiseScale", 0.001f);
     super.trigger();
   }

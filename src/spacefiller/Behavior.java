@@ -37,8 +37,8 @@ public abstract class Behavior {
     this.canvas = canvas;
   }
 
-  public abstract void draw();
   public abstract void setup();
+  public abstract void draw();
 
   public void trigger() {
     energy = 1;

@@ -32,6 +32,9 @@ public class Component {
 
   public Component(String componentID, PApplet parent) {
     this.shape = RG.loadShape("vector/" + componentID + ".svg");
+//    RG.setPolygonizerLength(10f);
+//    shape.polygonize();
+
 
     // TODO: check for duplicate names here
     int i = 0;
@@ -51,11 +54,23 @@ public class Component {
 
     loadOrCreateTransformer(10);
 
-    mask = RShape.createRectangle(0, 0, canvas.width, canvas.height).diff(shape);
+    if (shape.children.length > 0) {
+      mask = RShape.createRectangle(0, 0, canvas.width, canvas.height).diff(shape.children[0]);
+    } else {
+      mask = RShape.createRectangle(0, 0, canvas.width, canvas.height).diff(shape);
+    }
+
     mask.setFill(0xff000000);
     mask.setStrokeWeight(0);
 
-    getGraphTransformer().addChild(new RShapeTransformer(shape));
+    // TODO: Load RShapeTransformer
+    if (shape.children.length > 0) {
+      for (RShape child : shape.children) {
+        getGraphTransformer().addChild(new RShapeTransformer(child));
+      }
+    } else {
+      getGraphTransformer().addChild(new RShapeTransformer(shape));
+    }
   }
 
   public PVector getPosition() {
@@ -140,6 +155,12 @@ public class Component {
   public void drawCalibration() {
     shape.setFill(0);
     shape.setStroke(0xffffffff);
+    shape.setStrokeWeight(2);
+    for (RShape child : shape.children) {
+      child.setFill(0);
+      child.setStroke(0xffffffff);
+      child.setStrokeWeight(2);
+    }
     shape.draw(canvas);
   }
 

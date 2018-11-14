@@ -3,7 +3,6 @@ package spacefiller;
 import geomerative.RG;
 import geomerative.RPoint;
 import geomerative.RShape;
-import processing.core.PVector;
 import spacefiller.particles.Particle;
 import spacefiller.particles.behaviors.ParticleBehavior;
 
