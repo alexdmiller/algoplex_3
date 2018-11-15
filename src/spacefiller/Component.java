@@ -8,6 +8,7 @@ import processing.core.PVector;
 import spacefiller.graph.GridUtils;
 import spacefiller.mapping.GraphTransformer;
 import spacefiller.mapping.RShapeTransformer;
+import spacefiller.mapping.Transformable;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -64,12 +65,15 @@ public class Component {
     mask.setStrokeWeight(0);
 
     // TODO: Load RShapeTransformer
+
     if (shape.children.length > 0) {
+      int id = 0;
       for (RShape child : shape.children) {
-        getGraphTransformer().addChild(new RShapeTransformer(child));
+        getGraphTransformer().addChild(loadOrCreateRShapeTransformer(child, id));
+        id++;
       }
     } else {
-      getGraphTransformer().addChild(new RShapeTransformer(shape));
+      getGraphTransformer().addChild(loadOrCreateRShapeTransformer(shape, 0));
     }
   }
 
@@ -100,6 +104,20 @@ public class Component {
       out.writeObject(graphTransformer);
       out.close();
       fileOut.close();
+
+      int id = 0;
+      for (Transformable transformer : graphTransformer.getChildren()) {
+        RShapeTransformer rt = (RShapeTransformer) transformer;
+
+        fileOut =
+            new FileOutputStream("serialized/" + componentID + "-shape" + id + ".ser");
+         out = new ObjectOutputStream(fileOut);
+        out.writeObject(rt);
+        out.close();
+        fileOut.close();
+
+        id++;
+      }
     } catch (IOException i) {
       i.printStackTrace();
     }
@@ -127,6 +145,35 @@ public class Component {
 
     graphTransformer.setCanvas(canvas);
     graphTransformer.translate(position.x, position.y);
+  }
+
+  private RShapeTransformer loadOrCreateRShapeTransformer(RShape shape, int id) {
+    RShapeTransformer transformer = null;
+    try {
+      FileInputStream fileIn = new FileInputStream("serialized/" + componentID + "-shape" + id + ".ser");
+      ObjectInputStream in = new ObjectInputStream(fileIn);
+      transformer = (RShapeTransformer) in.readObject();
+      in.close();
+      fileIn.close();
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException i) {
+      i.printStackTrace();
+    } catch (ClassNotFoundException c) {
+      c.printStackTrace();
+    }
+
+
+    if (transformer != null) {
+      transformer.setShape(shape);
+      transformer.matchHandlesToShape();
+    } else {
+      transformer = new RShapeTransformer();
+      transformer.setShape(shape);
+      transformer.createHandlesFromShape();
+    }
+
+    return transformer;
   }
 
   public List<Behavior> getBehaviors() {

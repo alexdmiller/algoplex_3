@@ -1,15 +1,10 @@
 package spacefiller;
 
-import geomerative.RG;
 import geomerative.RShape;
-
-import java.security.interfaces.RSAKey;
 
 public class LayerScroll extends Behavior {
   @Override
   public void setup() {
-    RG.setPolygonizerLength(10f);
-    shape.polygonize();
   }
 
   @Override

@@ -73,15 +73,14 @@ public class Algoplex3 extends PApplet {
 //        new Component("topographic", this)
 //            .add(new LayerScroll()));
 //
-//    components.add(
-//        new Component("concentric-circles", this)
-//            .add(new ColorLayerScroll()));
+    components.add(
+        new Component("concentric-circles", this)
+            .add(new ColorLayerScroll()));
 //            .add(new LayerScroll()));
 
     components.add(
         new Component("concentric-squares", this)
-            .add(new FlashBehavior())
-            .add(new ConcentricBehavior()));
+            .add(new LayerScroll()));
 //
 //    components.add(
 //        new Component("concentric-circles", this)
