@@ -4,6 +4,7 @@ import geomerative.RPoint;
 import geomerative.RShape;
 
 public class ConcentricBehavior extends Behavior {
+
   @Override
   public void draw() {
     if (energy > 0) {

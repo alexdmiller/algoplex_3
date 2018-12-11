@@ -12,9 +12,10 @@ public class ShapeBounds extends ParticleBehavior {
   private RShape shape;
 
   public ShapeBounds(RShape shape) {
-    RG.setPolygonizerLength(20);
-    shape.polygonize();
-    this.shape = shape;
+    RG.setPolygonizerLength(50);
+    this.shape = new RShape(shape);
+    this.shape.polygonize();
+    RG.setPolygonizerLength(1);
   }
 
   @Override

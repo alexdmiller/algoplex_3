@@ -6,6 +6,7 @@ import spacefiller.marching.MarchingSquares;
 public class Marching extends Behavior {
   private MarchingSquares marchingSquares;
   private float noiseScale;
+  private float strokeSize = 4;
 
   @Override
   public void setup() {
@@ -20,7 +21,7 @@ public class Marching extends Behavior {
   @Override
   public void draw() {
     if (energy > 0) {
-      canvas.strokeWeight(5);
+      canvas.strokeWeight(strokeSize);
       canvas.stroke(255);
       canvas.noFill();
       marchingSquares.draw(canvas);
@@ -30,8 +31,9 @@ public class Marching extends Behavior {
   @Override
   public void trigger() {
     marchingSquares.setCellSize((float) (Math.random() * 10 + 10));
-    noiseScale = 0.1f;
-    Ani.to(this, 2f, "noiseScale", 0.001f);
+    strokeSize = (float) (Math.random() * 4 + 1);
+    noiseScale = (float) (0.1f * Math.random());
+    Ani.to(this, 2f, "noiseScale", (float) (0.1f * Math.random()));
     super.trigger();
   }
 }

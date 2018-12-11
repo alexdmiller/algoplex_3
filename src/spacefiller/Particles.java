@@ -32,7 +32,7 @@ public class Particles extends Behavior {
 
     flock = new FlockParticles(3, 1, 1, 12, 15, 15, 0.1f, 4);
     //system.addBehavior(new ParticleFriction(0.9f));
-    system.addBehavior(new ShapeBounds(shape));
+//    system.addBehavior(new ShapeBounds(shape));
 
     system.addBehavior(flock);
   }
@@ -62,8 +62,8 @@ public class Particles extends Behavior {
     separate = 15;
 
     Ani.to(this, 2f, "maxSpeed", 1f);
-    Ani.to(this, 3f, "particleSize", 0f);
-    Ani.to(this, 2f, "separate", (float) (Math.random() * 5), AniConstants.LINEAR);
+    Ani.to(this, 3f, "particleSize", 1f);
+    Ani.to(this, 2f, "separate", (float) (Math.random() * 30), AniConstants.LINEAR);
 
     super.trigger();
   }

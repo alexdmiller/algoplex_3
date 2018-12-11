@@ -15,5 +15,6 @@
     <orderEntry type="library" name="Ani" level="project" />
     <orderEntry type="library" name="quickhull3d.1.4" level="project" />
     <orderEntry type="library" name="toxiclibs" level="project" />
+    <orderEntry type="library" name="themidibus" level="project" />
   </component>
 </module>

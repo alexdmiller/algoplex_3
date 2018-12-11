@@ -31,7 +31,7 @@ public class Scroll extends Behavior {
   public void trigger() {
     super.trigger();
 
-    spacing = (float) (Math.random() * 20 + 5);
+    spacing = (float) (Math.random() * 40 + 5);
     speed = (float) (Math.random() * 20 - 10);
     vertical = Math.random() > 0.5f;
   }

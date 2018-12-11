@@ -7,20 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f40dd396-4cdb-4f01-81eb-312a972204dc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algoplex3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/algoplex3_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/circle-0.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algoplex3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algoplex3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape0.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape3.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape4.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0-shape5.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serialized/concentric-circles-0.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape0.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape3.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape4.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0-shape5.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/serialized/concentric-squares-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/pills-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/squiggle-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/topographic-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/u-left-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/u-right-0.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized/wiggle-0.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spacefiller/Algoplex3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Algoplex3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spacefiller/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spacefiller/LayerScroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/LayerScroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vector/concentric-squares.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vector/concentric-squares.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/RShapeComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Marching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Marching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Particles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Particles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Scroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Scroll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/ShapeBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/ShapeBounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Tangents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Tangents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spacefiller/Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spacefiller/Threads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vector/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/slanted-wave.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/triangle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vector/triangle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/u-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vector/u-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/u-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/vector/u-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector/waves.svg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +51,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/algoplex3$Algoplex3.ic" NAME="Algoplex3 Coverage Results" MODIFIED="1542215577098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/algoplex3$Algoplex3.ic" NAME="Algoplex3 Coverage Results" MODIFIED="1544313934450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>spacefiller.*</FILTER>
     </SUITE>
   </component>
@@ -40,8 +60,8 @@
       <file leaf-file-name="Algoplex3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spacefiller/Algoplex3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+            <state relative-caret-position="149">
+              <caret line="411" column="17" selection-start-line="411" selection-start-column="17" selection-end-line="411" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +69,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShapeBounds.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spacefiller/ShapeBounds.java">
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="259">
+              <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlashBehavior.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spacefiller/FlashBehavior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,73 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Component.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spacefiller/Component.java">
+      <file leaf-file-name="Gradient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spacefiller/Gradient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="484">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#4782#4783#0" expanded="true" />
-                <element signature="e#4808#4809#0" expanded="true" />
-                <element signature="e#5501#5502#0" expanded="true" />
-                <element signature="e#5534#5535#0" expanded="true" />
-                <element signature="e#5568#5569#0" expanded="true" />
-                <element signature="e#5591#5592#0" expanded="true" />
-                <element signature="e#5625#5626#0" expanded="true" />
-                <element signature="e#5656#5657#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectOutputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/io/ObjectOutputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="1183" column="48" selection-start-line="1183" selection-start-column="48" selection-end-line="1183" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WarpMode.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/WarpMode.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="413" selection-start-line="413" selection-end-line="413" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RShapePin.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapePin.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-              <folding>
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1674#1675#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RShapeTransformer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapeTransformer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -135,8 +105,56 @@
       <file leaf-file-name="LayerScroll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spacefiller/LayerScroll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="88">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RShapeComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spacefiller/RShapeComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WarpMode.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/WarpMode.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScaleMode.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/ScaleMode.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mapper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/Mapper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphTransformer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/GraphTransformer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4884">
+              <caret line="257" selection-start-line="257" selection-end-line="257" />
             </state>
           </provider>
         </entry>
@@ -160,6 +178,20 @@
       <find>shape.getW</find>
       <find>diff</find>
       <find>save</find>
+      <find>update</find>
+      <find>RG.s</find>
+      <find>setPol</find>
+      <find>mask</find>
+      <find>Triangle</find>
+      <find>squiggle</find>
+      <find>s</find>
+      <find>swoosh</find>
+      <find>Concentric</find>
+      <find>Con</find>
+      <find>cal</find>
+      <find>graphTransformer</find>
+      <find>shape</find>
+      <find>components</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,25 +217,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Pill.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Waves.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/WiggleComponent.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/XComponent.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/ConcentricCircles.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/FlashBehavior.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/Particles.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Gradient.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/Marching.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/Tangents.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/Scroll.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/ColorScroll.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/Threads.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Behavior.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/ColorLayerScroll.java" />
-        <option value="$PROJECT_DIR$/src/spacefiller/ShapeBounds.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/LayerScroll.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Marching.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Scroll.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/ShapeBounds.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Threads.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Tangents.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Particles.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/Compone.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Component.java" />
+        <option value="$PROJECT_DIR$/src/spacefiller/RShapeComponent.java" />
         <option value="$PROJECT_DIR$/src/spacefiller/Algoplex3.java" />
       </list>
     </option>
@@ -228,9 +262,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,7 +334,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27073553" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -399,12 +433,22 @@
       <workItem from="1541289673345" duration="21847000" />
       <workItem from="1541481814227" duration="35259000" />
       <workItem from="1542118572514" duration="7505000" />
-      <workItem from="1542149911174" duration="15968000" />
+      <workItem from="1542149911174" duration="37897000" />
+      <workItem from="1542597242199" duration="606000" />
+      <workItem from="1542739443600" duration="698000" />
+      <workItem from="1542823245316" duration="1895000" />
+      <workItem from="1543089982980" duration="312000" />
+      <workItem from="1543270725075" duration="597000" />
+      <workItem from="1543515321270" duration="598000" />
+      <workItem from="1543862645560" duration="66000" />
+      <workItem from="1544225168815" duration="18375000" />
+      <workItem from="1544393874764" duration="592000" />
+      <workItem from="1544549676655" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177181000" />
+    <option name="totallyTimeSpent" value="222883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1178" extended-state="6" />
@@ -428,12 +472,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22849214" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2562442" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Run with VisualVM" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24653888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27316293" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
@@ -441,6 +484,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -456,7 +500,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/GraphTransformer.class</url>
-          <line>66</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -466,87 +510,25 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/spacefiller/Component.java</url>
-          <line>167</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="51" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="lastDragged" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>lastDragged</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/TranslateMode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/minim/library/minim.jar!/ddf/minim/analysis/BeatDetect.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RPoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RMatrix.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Applications/Processing.app/Contents/Java/core/library/jogl-all.jar!/jogamp/opengl/GLDrawableHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1064" selection-start-line="1064" selection-end-line="1064" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Applications/Processing.app/Contents/Java/core/library/jogl-all.jar!/com/jogamp/newt/opengl/GLWindow.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="440" selection-start-line="440" selection-end-line="440" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RGeomElem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/geomerative/library/geomerative.jar!/geomerative/RShape.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -565,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/GraphTransformer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -610,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/color/SmoothColorTheme.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/particles/ParticleSystem.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -627,65 +595,190 @@
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Pill.java" />
     <entry file="file://$PROJECT_DIR$/src/spacefiller/XComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/spacefiller/WiggleComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/Waves.java">
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/VerticalScroll.java" />
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/Transformable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="486">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="413" selection-start-line="413" selection-end-line="413" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapePin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serialized/concentric-squares-0-shape0.ser">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapeTransformer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/ColorLayerScroll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/ColorScroll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/marching/MarchingSquares.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        <state relative-caret-position="214">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/Particles.java">
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/Waves.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="63" column="11" selection-start-line="63" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Marching.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="650">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/VerticalScroll.java" />
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/ConcentricCircles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Scroll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="35" column="5" selection-start-line="35" selection-end-line="36" />
+        <state relative-caret-position="524">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/Tangents.java">
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/particles/behaviors/ReflectiveBounds.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/ShapeBounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Threads.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="132">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/color/SmoothColorTheme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/Tangents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/Processing.app/Contents/Java/core/library/core.jar!/processing/core/PApplet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15752">
+          <caret line="836" selection-start-line="836" selection-end-line="836" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Processing3/libraries/themidibus/library/themidibus.jar!/themidibus/MidiBus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20944">
+          <caret line="998" column="21" selection-start-line="998" selection-start-column="21" selection-end-line="998" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/Particles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/Behavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/graph/GridUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/io/ObjectOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="1183" selection-start-line="1183" selection-end-line="1183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/graph/renderer/BasicGraphRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,53 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/ConcentricCircles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/ConcentricBehavior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/Behavior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/ColorScroll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/ColorLayerScroll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Gradient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -759,107 +805,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/Mapper.class">
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/LayerScroll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="116" column="13" lean-forward="true" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
-          <folding>
-            <element signature="e#2651#2652#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/Transformable.class">
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/Mapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="506">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/RShapeComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/Component.java" />
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/ScaleMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/GraphTransformer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4884">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/modes/WarpMode.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="528">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/ShapeBounds.java">
+    <entry file="file://$PROJECT_DIR$/src/spacefiller/RShapeComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="528">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/LayerScroll.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/io/ObjectOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="1183" column="48" selection-start-line="1183" selection-start-column="48" selection-end-line="1183" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="413" selection-start-line="413" selection-end-line="413" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapePin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serialized/concentric-squares-0-shape0.ser">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spacefiller/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4808#4809#0" expanded="true" />
-            <element signature="e#5501#5502#0" expanded="true" />
-            <element signature="e#5534#5535#0" expanded="true" />
-            <element signature="e#5568#5569#0" expanded="true" />
-            <element signature="e#5591#5592#0" expanded="true" />
-            <element signature="e#5625#5626#0" expanded="true" />
-            <element signature="e#5656#5657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar!/spacefiller/mapping/RShapeTransformer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        <state relative-caret-position="259">
+          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spacefiller/Algoplex3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state relative-caret-position="149">
+          <caret line="411" column="17" selection-start-line="411" selection-start-column="17" selection-end-line="411" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -946,7 +955,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>toxiclibs</last-edited>
+          <last-edited>themidibus</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

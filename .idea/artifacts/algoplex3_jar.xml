@@ -31,6 +31,8 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/../spacefillerlib/out/artifacts/spacefillerlib_jar/spacefillerlib.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Documents/Processing3/libraries/Ani/library/Ani.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Documents/Processing3/libraries/keystone/library/jai_core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Processing3/libraries/toxiclibs/library/toxiclibs.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Processing3/libraries/themidibus/library/themidibus.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
