@@ -69,6 +69,7 @@ public class Algoplex3 extends PApplet {
   private MidiBus bus;
   private float dimmer;
   private int maxActive = 2;
+  private GridAnimation gridAnimation;
 
   @Override
   public void settings() {
@@ -87,6 +88,13 @@ public class Algoplex3 extends PApplet {
     RG.init(this);
     Ani.init(this);
     // RG.ignoreStyles();
+
+    minim = new Minim(this);
+    in = minim.getLineIn();
+
+    beat = new BeatDetect();
+    beat.detectMode(BeatDetect.FREQ_ENERGY);
+    beat.setSensitivity(300);
 
     components = new ArrayList<>();
 
@@ -407,12 +415,23 @@ public class Algoplex3 extends PApplet {
 //            .add(new LayerScroll())
 //    );
 
-    components.add(
-        RShapeComponent.createTriangleGrid(4, 1, 100, this)
-            .add(new ColorLayerScroll())
-            .add(new LayerScroll())
+    RShapeComponent[] gridComponents = new RShapeComponent[] {
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+        RShapeComponent.createTriangleGrid(4, 1, 150, this),
+    };
 
-    );
+    gridAnimation = new GridAnimation(gridComponents, in, beat);
+
+    for (RShapeComponent component : gridComponents) {
+      component.setEnabled(false);
+      components.add(component);
+    }
 
     mapper = new Mapper(this);
 
@@ -420,12 +439,6 @@ public class Algoplex3 extends PApplet {
       mapper.addTransformable(c.getGraphTransformer());
     }
 
-    minim = new Minim(this);
-    in = minim.getLineIn();
-
-    beat = new BeatDetect();
-    beat.detectMode(BeatDetect.FREQ_ENERGY);
-    beat.setSensitivity(300);
 
 //    beat.setSensitivity(200);
   }
@@ -436,7 +449,7 @@ public class Algoplex3 extends PApplet {
     for (RShapeComponent component : components) {
       if (component.initialized()) {
         component.getCanvas().beginDraw();
-        component.getCanvas().clear();
+        //component.getCanvas().clear();
 
         if (calibrate) {
           component.drawCalibration();
@@ -450,9 +463,13 @@ public class Algoplex3 extends PApplet {
       }
     }
 
+
     stroke(255);
 
     beat.detect(in.mix);
+
+    gridAnimation.draw();
+
     fill(0);
 
     if (beat.isKick()) {
